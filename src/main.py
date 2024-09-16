@@ -62,34 +62,22 @@ st.set_page_config(
     layout="centered"
 )
 
-# Load and display sidebar image
-img_path = "src/imgs/Logo.svg"
-img_width = 140
-
-# Check if the image file exists
-if os.path.exists(img_path):
-    # Display the image in the sidebar
-    st.image(img_path, width=img_width)
-    # st.sidebar.image(img_path, use_column_width=True)
-
-
-st.sidebar.markdown("---")
-
-
-st.title("Doc-Talk By RahulB")
+st.title("🤖 Doc-Talk By RahulB")
 
 # initialize the chat history in streamlit session state
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 
-
 # Sidebar content
 with st.sidebar:
-    # st.header("About")
+
+    st.markdown("---")
     st.write("# About")
     st.write("Have a chat with your pdf")
     uploaded_file = st.file_uploader(label="Upload Your PDF File", type=["pdf"])
+    st.markdown("---")
+    
     st.header("Tech Stack Used")
     st.write("""
     - [Langchain](https://www.langchain.com/) & [Groq](https://groq.com/) As a backbone of the App
