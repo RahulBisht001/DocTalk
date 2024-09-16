@@ -62,6 +62,19 @@ st.set_page_config(
     layout="centered"
 )
 
+# Load and display sidebar image
+img_path = "imgs/bot.png"
+
+
+# Check if the image file exists
+if os.path.exists(img_path):
+    # Display the image in the sidebar
+    st.sidebar.image(img_path, use_column_width=True)
+
+
+st.sidebar.markdown("---")
+
+
 st.title("Doc-Talk By RahulB")
 
 # initialize the chat history in streamlit session state
