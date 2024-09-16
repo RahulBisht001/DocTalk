@@ -63,13 +63,14 @@ st.set_page_config(
 )
 
 # Load and display sidebar image
-img_path = "src/imgs/bot.png"
-img_width = 150
+img_path = "src/imgs/logo.png"
+# img_width = 150
 
 # Check if the image file exists
 if os.path.exists(img_path):
     # Display the image in the sidebar
-    st.sidebar.image(img_path, width=img_width)
+    # st.sidebar.image(img_path, width=img_width)
+    st.sidebar.image(img_path, use_column_width=True)
 
 
 st.sidebar.markdown("---")
