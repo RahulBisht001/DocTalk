@@ -71,15 +71,12 @@ if "chat_history" not in st.session_state:
 
 # Sidebar content
 with st.sidebar:
-
     st.write("# About")
     st.write("""
-    This App is Build by [Rahul Bisht](https://www.linkedin.com/in/RahulB001). you can find the code Repository [here](https://github.com/RahulBisht001/DocTalk)
+    This App is Build by [Rahul Bisht](https://www.linkedin.com/in/RahulB001). you can find the code Repository [here](https://github.com/RahulBisht001/DocTalk).
     """)
-    st.write("Have a chat with your pdf")
     uploaded_file = st.file_uploader(label="Upload Your PDF File", type=["pdf"])
     st.markdown("---")
-
     st.header("Tech Stack Used 🤔")
     st.write("""
     - [Langchain](https://www.langchain.com/) & [Groq](https://groq.com/) As a backbone of the App
