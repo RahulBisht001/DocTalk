@@ -58,11 +58,11 @@ def create_chain(vectorstore):
 
 st.set_page_config(
     page_title="Chat with Doc",
-    page_icon="📄",
+    page_icon="🤖",
     layout="centered"
 )
 
-st.title("🦙 Chat with Doc - LLAMA 3.1")
+st.title("Doc-Talk By RahulB")
 
 # initialize the chat history in streamlit session state
 if "chat_history" not in st.session_state:
