@@ -64,12 +64,12 @@ st.set_page_config(
 
 # Load and display sidebar image
 img_path = "src/imgs/bot.png"
-
+img_width = 150
 
 # Check if the image file exists
 if os.path.exists(img_path):
     # Display the image in the sidebar
-    st.sidebar.image(img_path, use_column_width=True)
+    st.sidebar.image(img_path, width=img_width)
 
 
 st.sidebar.markdown("---")
@@ -115,8 +115,7 @@ if uploaded_file:
 
 for message in st.session_state.chat_history:
     role = message["role"]
-    avatar = "imgs/bot.png"
-    with st.chat_message(message["role"], avatar):
+    with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
 
@@ -126,7 +125,6 @@ user_input = st.chat_input("Ask Llama...")
 if user_input:
     st.session_state.chat_history.append({"role": "user", "content": user_input})
     
-    # user_avatar = "imgs/user.png"
     with st.chat_message("user"):
         st.markdown(user_input)
 
