@@ -1,6 +1,4 @@
 what is rag
-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
-
 
 python-dotenv==1.0.1
 streamlit==1.37.0
