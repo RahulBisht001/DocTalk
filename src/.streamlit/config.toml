@@ -1,0 +1,7 @@
+# .streamlit/config.toml
+
+[theme]
+base="light"
+primaryColor="#22c55e" # Change primary textColor
+textColor="#000000" # Change text color
+font="serif" # Change font family

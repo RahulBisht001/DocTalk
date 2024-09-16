@@ -69,7 +69,24 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 
-uploaded_file = st.file_uploader(label="Upload your pdf file", type=["pdf"])
+
+# Sidebar content
+with st.sidebar:
+    # st.header("About")
+    st.write("# About")
+    st.write("Have a chat with your pdf")
+    uploaded_file = st.file_uploader(label="Upload Your PDF File", type=["pdf"])
+    st.header("Tech Stack Used")
+    st.write("""
+    - [Langchain](https://www.langchain.com/) & [Groq](https://groq.com/) As a backbone of the App
+    - #### **FAISS**  ( Facebook AI Similarity search as Vector Database )
+    - [Streamlit](https://docs.streamlit.io/) For building User Interface
+    - [GitHub](https://github.com) For version control
+    - Official [Python](https://www.python.org/) website
+    - [Stack Overflow](https://stackoverflow.com)
+    """)
+    
+# uploaded_file = st.file_uploader(label="Upload your pdf file", type=["pdf"])
 
 if uploaded_file:
     file_path = f"{working_dir}/{uploaded_file.name}"
