@@ -69,7 +69,7 @@ img_width = 140
 # Check if the image file exists
 if os.path.exists(img_path):
     # Display the image in the sidebar
-    st.sidebar.image(img_path, width=img_width)
+    st.image(img_path, width=img_width)
     # st.sidebar.image(img_path, use_column_width=True)
 
 
