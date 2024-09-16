@@ -63,7 +63,7 @@ st.set_page_config(
 )
 
 # Load and display sidebar image
-img_path = "src/imgs/logo.png"
+img_path = "src/imgs/BOT.svg"
 # img_width = 150
 
 # Check if the image file exists
