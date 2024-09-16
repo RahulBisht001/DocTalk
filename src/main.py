@@ -58,7 +58,7 @@ def create_chain(vectorstore):
 
 st.set_page_config(
     page_title="Chat with Doc",
-    page_icon="🤖",
+    page_icon="imgs/bot.png",
     layout="centered"
 )
 
@@ -101,7 +101,9 @@ if uploaded_file:
         st.session_state.conversation_chain = create_chain(st.session_state.vectorstore)
 
 for message in st.session_state.chat_history:
-    with st.chat_message(message["role"]):
+    role = message["role"]
+    avatar = "imgs/bot.png"
+    with st.chat_message(message["role"], avatar):
         st.markdown(message["content"])
 
 
@@ -110,8 +112,9 @@ user_input = st.chat_input("Ask Llama...")
 
 if user_input:
     st.session_state.chat_history.append({"role": "user", "content": user_input})
-
-    with st.chat_message("user"):
+    
+    user_avatar = "imgs/user.png"
+    with st.chat_message("user",user_avatar):
         st.markdown(user_input)
 
 
