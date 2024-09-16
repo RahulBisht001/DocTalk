@@ -68,6 +68,22 @@ st.title("🤖 Doc-Talk By RahulB")
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
+# Custom CSS to reduce sidebar padding
+st.markdown(
+    """
+    <style>
+    /* Reduce padding for the sidebar */
+    .css-1d391kg {
+        padding: 5;
+    }
+    /* Optional: Further reduce padding around specific elements */
+    .css-1d391kg .css-1r7b3iz {
+        padding: 5;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar content
 with st.sidebar:
