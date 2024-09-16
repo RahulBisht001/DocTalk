@@ -58,12 +58,12 @@ def create_chain(vectorstore):
 
 st.set_page_config(
     page_title="Chat with Doc",
-    page_icon="imgs/bot.png",
+    page_icon="src/imgs/bot.png",
     layout="centered"
 )
 
 # Load and display sidebar image
-img_path = "imgs/bot.png"
+img_path = "src/imgs/bot.png"
 
 
 # Check if the image file exists
