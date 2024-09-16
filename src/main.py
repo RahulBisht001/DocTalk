@@ -113,8 +113,8 @@ user_input = st.chat_input("Ask Llama...")
 if user_input:
     st.session_state.chat_history.append({"role": "user", "content": user_input})
     
-    user_avatar = "imgs/user.png"
-    with st.chat_message("user",user_avatar):
+    # user_avatar = "imgs/user.png"
+    with st.chat_message("user"):
         st.markdown(user_input)
 
 
