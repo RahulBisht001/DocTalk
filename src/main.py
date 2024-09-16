@@ -74,11 +74,11 @@ st.markdown(
     <style>
     /* Reduce padding for the sidebar */
     .css-1d391kg {
-        padding: 2;
+        padding: 0;
     }
     /* Optional: Further reduce padding around specific elements */
     .css-1d391kg .css-1r7b3iz {
-        padding: 2;
+        padding: 0;
     }
     </style>
     """,
